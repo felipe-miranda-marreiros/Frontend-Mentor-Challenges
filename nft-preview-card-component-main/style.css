@@ -13,3 +13,64 @@ html {
 }
 
 /********************************/
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  gap: 2rem;
+  font-size: 1.8rem;
+}
+
+.container {
+  border-radius: 16px;
+  padding: 2rem;
+  height: 60rem;
+  width: 35rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.2);
+}
+
+.main-img-equilibrium {
+  width: 100%;
+  border-radius: 10px;
+  grid-column: 1 / -1;
+}
+.main-description-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.secondary-container,
+.tertiary-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+footer {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 1.5rem 0 1rem;
+  border-top: 1px solid;
+}
+.author-avatar {
+  width: 3rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
