@@ -50,6 +50,16 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
+.title {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+.description {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.7rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
 main {
   display: flex;
   justify-content: space-between;
@@ -62,6 +72,13 @@ main {
   justify-content: center;
   gap: 1rem;
 }
+.actual-value {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+.tertiary-container p {
+  color: hsl(215, 51%, 70%);
+}
 footer {
   display: flex;
   align-items: center;
@@ -73,4 +90,10 @@ footer {
   width: 3rem;
   border: 1px solid hsl(0, 0%, 100%);
   border-radius: 50%;
+}
+footer p {
+  color: hsl(215, 51%, 70%);
+}
+footer span {
+  color: hsl(0, 0%, 100%);
 }
