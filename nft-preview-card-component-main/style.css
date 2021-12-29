@@ -130,3 +130,29 @@ footer span {
 footer span:hover{
   color: hsl(178, 100%, 50%);
 }
+
+/*1040px*/
+@media (max-width: 65em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/*400px*/
+@media (max-width: 25em) {
+  html {
+    font-size: 55%;
+  }
+}
+/*320px*/
+@media (max-width: 20em) {
+  html {
+    font-size: 50%;
+  }
+}
+/*288px*/
+@media (max-width: 18em) {
+  html {
+    font-size: 43.75%;
+  }
+}
