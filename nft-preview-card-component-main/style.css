@@ -27,6 +27,7 @@ body {
   font-size: 1.8rem;
 }
 
+/********************************/
 .container {
   border-radius: 16px;
   padding: 2.3rem;
@@ -39,10 +40,11 @@ body {
   box-shadow: 0 50px 100px rgba(0, 0, 0, 0.2);
 }
 
+/*********** hover effect starts here ***********/
 .main-img-box {
   position: relative;
 }
-.hover-img-icon{
+.hover-img-icon {
   position: absolute;
   transition: all 0.3s ease-out;
   background-color: hsla(178, 100%, 50%, 0.4);
@@ -50,9 +52,9 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
-  opacity: 0; 
+  opacity: 0;
 }
-.hover-img-icon img{
+.hover-img-icon img {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -61,6 +63,7 @@ body {
 .hover-img-icon:hover {
   opacity: 1;
 }
+/*********** hover effect ends here ***********/
 .main-img-equilibrium {
   width: 100%;
   border-radius: 10px;
@@ -78,7 +81,7 @@ body {
   font-size: 2.1rem;
   transition: all 0.3s;
 }
-.title:hover{
+.title:hover {
   color: hsl(178, 100%, 50%);
 }
 .description {
@@ -107,6 +110,7 @@ main {
 .tertiary-container p {
   color: hsl(215, 51%, 70%);
 }
+/*********** about author section ***********/
 footer {
   display: flex;
   align-items: center;
@@ -127,9 +131,13 @@ footer span {
   color: hsl(0, 0%, 100%);
   transition: all 0.3s;
 }
-footer span:hover{
+footer span:hover {
   color: hsl(178, 100%, 50%);
 }
+/*********** about author section ***********/
+
+/*********** Media Queries ***********/
+
 
 /*1040px*/
 @media (max-width: 65em) {
