@@ -29,7 +29,7 @@ body {
 
 .container {
   border-radius: 16px;
-  padding: 2rem;
+  padding: 2.3rem;
   height: 60rem;
   width: 35rem;
   display: grid;
@@ -53,10 +53,11 @@ body {
 .title {
   color: hsl(0, 0%, 100%);
   font-weight: 600;
+  font-size: 2.1rem;
 }
 .description {
   color: hsl(215, 51%, 70%);
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -64,13 +65,14 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.7rem;
 }
 .secondary-container,
 .tertiary-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.7rem;
 }
 .actual-value {
   color: hsl(178, 100%, 50%);
@@ -85,6 +87,7 @@ footer {
   gap: 1.3rem;
   padding: 1.5rem 0 1rem;
   border-top: 1px solid hsl(215, 32%, 27%);
+  font-size: 1.6rem;
 }
 .author-avatar {
   width: 3rem;
