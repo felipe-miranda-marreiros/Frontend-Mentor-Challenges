@@ -93,7 +93,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
 }
-main {
+.main-infos {
   display: flex;
   justify-content: space-between;
   align-items: center;
