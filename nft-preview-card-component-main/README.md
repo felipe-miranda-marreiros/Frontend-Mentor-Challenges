@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [responsive card using flexbox and grid](https://www.frontendmentor.io/solutions/responsive-card-using-flexbox-and-grid-VfLik6pFw)
 - Live Site URL: [nft-card-preview-fmm](https://nft-card-preview-fmm.netlify.app/)
 
 ## My process
