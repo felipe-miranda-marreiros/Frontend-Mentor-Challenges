@@ -62,9 +62,11 @@ body {
 }
 .hover-img-icon:hover {
   opacity: 1;
+  cursor: pointer;
 }
 /*********** hover effect ends here ***********/
 .main-img-equilibrium {
+  display: block;
   width: 100%;
   border-radius: 10px;
   grid-column: 1 / -1;
@@ -83,6 +85,7 @@ body {
 }
 .title:hover {
   color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 .description {
   color: hsl(215, 51%, 70%);
@@ -130,6 +133,7 @@ footer p {
 footer span {
   color: hsl(0, 0%, 100%);
   transition: all 0.3s;
+  cursor: pointer;
 }
 footer span:hover {
   color: hsl(178, 100%, 50%);
@@ -137,7 +141,6 @@ footer span:hover {
 /*********** about author section ***********/
 
 /*********** Media Queries ***********/
-
 
 /*1040px*/
 @media (max-width: 65em) {
