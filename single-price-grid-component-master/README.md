@@ -13,12 +13,12 @@ Your users should be able to:
 
 ### Screenshot
 
-![alt-text]()
+![alt-text](https://user-images.githubusercontent.com/91689754/149594388-8424daca-ab15-46ef-9045-6074f2471b15.PNG)
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-single-price-grid-component-flexbox-grid-QQZkSDTjO)
+- Live Site URL: [Single price grid component](https://single-price-grid-fmm.netlify.app/)
 
 ## My process
 
