@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  padding: 2.5rem;
+  font-size: 1.6rem;
+}
+
+/***************************/
+/*Reusable classes*/
+.container {
+  max-width: 70rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.df-pd {
+  padding: 3rem 4.5rem;
+}
+/****************************/
+.intro {
+  background-color: #fff;
+  grid-column: 1 / -1;
+}
+.intro-p-container {
+  margin-top: 2rem;
+}
+.intro-header--1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 2.2rem;
+}
+.intro-header--2 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 0.8rem;
+}
+.intro-p {
+  line-height: 1.7;
+  color: hsl(218, 22%, 67%);
+}
+.month-subscription,
+.about-us {
+  background-color: hsl(179, 62%, 43%);
+}
+.month-subscription {
+  grid-column: 1;
+}
+.month-intro {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 2rem;
+}
+.month-p {
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+}
+.month-description {
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+  margin-top: 1rem;
+}
+.month-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: hsla(203, 44%, 93%, 0.829);
+}
+.month-price span {
+  font-weight: 700;
+  font-size: 3rem;
+  color: hsl(204, 43%, 93%);
+}
+.btn-sign-up {
+  width: 100%;
+  padding: 2rem;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  border-radius: 7px;
+  border: none;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 4rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-sign-up:hover {
+  background-color: hsl(204, 43%, 93%);
+  color: hsl(179, 62%, 43%);
+}
+.why-us {
+  background-color: hsla(179, 62%, 43%, 0.788);
+}
+.why-us-text {
+  margin-bottom: 2rem;
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+}
+.why-us-text-list {
+  list-style: none;
+  color: hsla(203, 44%, 93%, 0.815);
+  line-height: 1.5;
+}
+@media screen and (max-width: 57em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .intro-header--2 {
+    margin-bottom: 2rem;
+  }
+  .df-pd {
+    padding: 3rem 2.5rem;
+  }
+  .btn-sign-up {
+    margin-top: 3.5rem;
+  }
+}
