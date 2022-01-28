@@ -17,12 +17,12 @@ Your users should be able to:
 
 ### Screenshot
 
-![alt-text]()
+![alt-text](https://user-images.githubusercontent.com/91689754/151623497-1852304d-b15b-43fa-a0a1-260cc300c72e.gif)
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Intro component with sign-up form]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-signup-form-flexbox-grid-javascript-8HN-zfqb4)
+- Live Site URL: [Intro component with sign-up form](https://intro-sign-in-form-fmm.netlify.app/)
 
 ## My process
 
