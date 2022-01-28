@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-desktop.png);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+  min-height: 100vh;
+  padding: 1.5rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  gap: 2rem;
+}
+.container {
+  max-width: 81.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.intro-header {
+  color: #fff;
+  font-weight: 700;
+  padding: 1.25rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.intro-p {
+  color: rgba(255, 255, 255, 0.726);
+  font-weight: 600;
+  margin: 0.25rem;
+  line-height: 1.7;
+  text-align: center;
+}
+.trial-box {
+  margin-top: 3.5rem;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 1.2rem 4rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.692);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.trial-box-text span {
+  font-weight: 700;
+  color: #fff;
+}
+.forms-cta {
+  margin-top: 1.3rem;
+  background-color: #fff;
+  padding: 1.7rem 1.3rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.input-field {
+  position: relative;
+}
+.text-error {
+  color: hsl(0, 100%, 74%);
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: end;
+  opacity: 1;
+  visibility: visible;
+  padding: 0.4rem 0 1.1rem;
+  transition: all 0.5s;
+}
+.display-error {
+  visibility: visible;
+  opacity: 1;
+}
+.forms-options input {
+  padding: 1.2rem;
+  font-size: 0.882rem;
+  border: 1px solid hsla(246, 25%, 77%, 0.452);
+  border-radius: 0.5rem;
+  color: hsl(249, 10%, 26%);
+  font-weight: 700;
+  width: 100%;
+}
+.error-icon {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+.forms-options input:focus {
+  outline: 1px solid hsl(248, 32%, 49%);
+}
+.inputValue.empty-error {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+.inputValue.success {
+  border: 2px solid hsl(154, 59%, 51%);
+}
+.btn-form {
+  margin-top: 0.2rem;
+  background-color: hsl(154, 59%, 51%);
+  padding: 1.3rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.063rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: all 0.5s;
+}
+.btn-form:hover {
+  filter: opacity(65%);
+}
+.terms-services {
+  font-size: 0.8rem;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  padding: 0 0.8rem;
+  margin-top: 0.999rem;
+  line-height: 1.7;
+}
+.terms-services span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 62.5em) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 4rem auto;
+    column-gap: 3rem;
+  }
+  .trial-box {
+    margin-top: 0;
+  }
+  .forms-cta {
+    grid-column: 2;
+    padding: 2.7rem;
+  }
+  .intro {
+    grid-row: span 2;
+    align-self: center;
+    margin-top: 3rem;
+  }
+  .intro-header {
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 5rem;
+    line-height: 1.2;
+  }
+  .intro-p {
+    margin-top: 2rem;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0 0 0 5rem;
+  }
+}
