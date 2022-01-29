@@ -86,7 +86,7 @@ body {
   opacity: 1;
 }
 .forms-options input {
-  padding: 1.2rem;
+  padding: 1.1rem;
   font-size: 0.882rem;
   border: 1px solid hsla(246, 25%, 77%, 0.452);
   border-radius: 0.5rem;
@@ -151,7 +151,7 @@ body {
   }
   .forms-cta {
     grid-column: 2;
-    padding: 2.7rem;
+    padding: 2.4rem;
   }
   .intro {
     grid-row: span 2;
