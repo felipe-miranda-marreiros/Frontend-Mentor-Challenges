@@ -17,7 +17,7 @@
 
 <a href="https://github.com/felipe-miranda-marreiros/Frontend-Mentor-Challenges/tree/main/intro-component-with-signup-form-master">Intro Component with Sign-Up Form</a>
 
-## Intro Component with Sign-Up Form
+## Fylo dark theme landing page form
 ![image](https://user-images.githubusercontent.com/91689754/153752249-c6b274e6-28a7-4138-805b-5287b18d87f8.png)
 
-<a href="https://github.com/felipe-miranda-marreiros/fylo_landingPage">Intro Component with Sign-Up Form</a>
+<a href="https://github.com/felipe-miranda-marreiros/fylo_landingPage">Fylo dark theme landing page form</a>
