@@ -21,3 +21,8 @@
 ![image](https://user-images.githubusercontent.com/91689754/153752249-c6b274e6-28a7-4138-805b-5287b18d87f8.png)
 
 <a href="https://github.com/felipe-miranda-marreiros/fylo_landingPage">Fylo dark theme landing page form</a>
+
+## QR Code component
+![image](https://user-images.githubusercontent.com/91689754/155868229-84562ded-ed43-4642-b921-6bf5db67ded6.png)
+
+<a href="https://qr-code-component-fmm.netlify.app/">QR Code component</a>
