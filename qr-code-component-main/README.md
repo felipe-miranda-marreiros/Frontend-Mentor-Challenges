@@ -12,7 +12,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![alt-text](https://user-images.githubusercontent.com/91689754/149594388-8424daca-ab15-46ef-9045-6074f2471b15.PNG)
+![image](https://user-images.githubusercontent.com/91689754/155868229-84562ded-ed43-4642-b921-6bf5db67ded6.png)
 
 ### Links
 
