@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navbar__items li {
+    display: inline;
+    margin-right: 28px;
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: $Grayish-Blue;
+  }
+  .navbar__btn {
+    margin-right: 2.7rem;
+  }
+}

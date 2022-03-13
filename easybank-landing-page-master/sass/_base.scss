@@ -1,0 +1,27 @@
+//Primary
+$Dark-Blue: hsl(233, 26%, 24%);
+$Lime-Green: hsl(136, 65%, 51%);
+$Bright-Cyan: hsl(192, 70%, 51%);
+
+//Neutral
+$Grayish-Blue: hsl(233, 8%, 62%);
+$Light-Grayish-Blue: hsl(220, 16%, 96%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-style: inherit;
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: clamp(1rem, 2.708vw, 1.125rem);
+}
+.container {
+  max-width: 75rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}

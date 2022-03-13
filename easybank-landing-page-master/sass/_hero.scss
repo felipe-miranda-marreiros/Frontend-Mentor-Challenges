@@ -1,0 +1,25 @@
+.hero {
+  background-color: $Light-Grayish-Blue;
+  z-index: 9999;
+  position: relative;
+
+  .hero__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    overflow: hidden;
+    .hero__content-title {
+      max-width: 300px;
+    }
+    .hero__content-paragraph {
+      max-width: 450px;
+    }
+  }
+  .hero__image {
+    transform: translate(-2%, 1%);
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
