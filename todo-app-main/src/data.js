@@ -18,7 +18,7 @@ export default [
   {
     id: "1652124914855",
     content: "Jog around the park 3x",
-    isComplete: false,
+    isComplete: true,
   },
   {
     id: "1652124914877",
@@ -26,7 +26,7 @@ export default [
     isComplete: false,
   },
   {
-    id: "1652124914858",
+    id: "1652124914800",
     content: "Jog around the park 3x",
     isComplete: false,
   },

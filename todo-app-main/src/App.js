@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
+import TodoStatus from "./todoStatus";
 import "./css/App.style.css";
 import data from "./data";
 
 import moonIcon from "../src/images/icon-moon.svg";
 import sunIcon from "../src/images/icon-sun.svg";
 import crossIcon from "../src/images/icon-cross.svg";
-import checkIcon from "../src/images/icon-check.svg";
 
 const App = () => {
   const [mode, setMode] = useState(false);
@@ -16,17 +16,16 @@ const App = () => {
     isComplete: false,
   });
 
-  const toogleModes = () => {
+  const toogleScreenMode = () => {
     setMode((prevState) => !prevState);
   };
 
-  const handleOnChange = (e) => {
+  const createNewTodo = (e) => {
     const { name, value, type, checked } = e.target;
-
     setNewTodo((prevState) => {
       return {
         ...prevState,
-        id: new Date().getTime(),
+        id: new Date().getSeconds(),
         [name]: type === "checkbox" ? checked : value,
       };
     });
@@ -37,8 +36,8 @@ const App = () => {
     if (Object.values(newTodo).every((prop) => prop === false)) {
       return;
     } else {
-      setTodos((prevState) => {
-        return [...prevState, newTodo];
+      setNewTodo((prevState) => {
+        return { ...prevState, id: "", content: "", isComplete: false };
       });
     }
   };
@@ -50,7 +49,7 @@ const App = () => {
           <h1 className="todo__title">TODO</h1>
           <button
             className="mode-icons"
-            onClick={toogleModes}
+            onClick={toogleScreenMode}
             title={mode ? "Set dark mode" : "Set light mode"}
           >
             <img src={mode ? moonIcon : sunIcon} alt="icon" />
@@ -58,46 +57,21 @@ const App = () => {
         </div>
       </header>
       <main className="container">
-        <form className="todo-input" onSubmit={handleSubmit}>
-          <div className="round">
-            <label htmlFor="checkbox"></label>
-            <input
-              id="checkbox"
-              type="checkbox"
-              value={newTodo.isComplete}
-              name="isComplete"
-              checked={newTodo.isComplete}
-              onChange={handleOnChange}
-            />
-          </div>
+        <form className="todo-form" onSubmit={handleSubmit}>
           <input
             type="text"
-            name="content"
             className="todo-input--el"
             placeholder="Create a new todo..."
-            value={newTodo.content}
-            onChange={handleOnChange}
+            name="content"
           />
         </form>
         <ul className="todo">
           {todos.map((todo) => {
             return (
-              <>
-                <div className="round" key={todo.id}>
-                  <label htmlFor="checkbox"></label>
-                  <input
-                    id="checkbox"
-                    type="checkbox"
-                    value={newTodo.isComplete}
-                    name="isComplete"
-                    checked={newTodo.isComplete}
-                    onChange={handleOnChange}
-                  />
-                </div>
-                <li className="todo-item" key={todo.id}>
-                  {todo.content}
-                </li>
-              </>
+              <li className="todo-item" key={todo.id}>
+                <TodoStatus status={todo.isComplete} />
+                {todo.content}
+              </li>
             );
           })}
         </ul>
