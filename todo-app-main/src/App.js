@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import TodoStatus from "./todoStatus";
 import "./css/App.style.css";
 import data from "./data";
@@ -11,7 +12,7 @@ const App = () => {
   const [mode, setMode] = useState(false);
   const [todos, setTodos] = useState(data);
   const [newTodo, setNewTodo] = useState({
-    id: "",
+    id: new Date().getSeconds(),
     content: "",
     isComplete: false,
   });
@@ -20,22 +21,26 @@ const App = () => {
     setMode((prevState) => !prevState);
   };
 
-  const createNewTodo = (e) => {
-    const { name, value, type, checked } = e.target;
+  const createNewTodo = () => {
+    setTodos((prevState) => {
+      return [...prevState, newTodo];
+    });
+  };
+
+  const changeStatus = () => {
     setNewTodo((prevState) => {
-      return {
-        ...prevState,
-        id: new Date().getSeconds(),
-        [name]: type === "checkbox" ? checked : value,
-      };
+      return newTodo.isComplete
+        ? { ...prevState, isComplete: false }
+        : { ...prevState, isComplete: true };
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (Object.values(newTodo).every((prop) => prop === false)) {
+    if (!newTodo.content) {
       return;
     } else {
+      createNewTodo();
       setNewTodo((prevState) => {
         return { ...prevState, id: "", content: "", isComplete: false };
       });
@@ -58,11 +63,19 @@ const App = () => {
       </header>
       <main className="container">
         <form className="todo-form" onSubmit={handleSubmit}>
+          <TodoStatus status={newTodo.isComplete} changeStatus={changeStatus} />
           <input
             type="text"
             className="todo-input--el"
             placeholder="Create a new todo..."
             name="content"
+            value={newTodo.content}
+            onChange={(e) =>
+              setNewTodo((prevState) => ({
+                ...prevState,
+                content: e.target.value,
+              }))
+            }
           />
         </form>
         <ul className="todo">
